@@ -1,0 +1,148 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root {
+  /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+  /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+  --color-de-fondo: #f5f5f5;
+  --color-de-link: #000;
+  --font-defect: "Raleway";
+  --padding-inicial: 3%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--color-de-fondo);
+  font-family: var(--font-defect);
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--color-de-link);
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/* Diseño del contenedor*/
+.tudo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/*Sección Menu*/
+
+section.menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: rebeccapurple;
+  padding: 0 var(--padding-inicial);
+}
+.menu__header {
+  display: flex;
+}
+.menu__header__list {
+  display: flex;
+}
+.menu__list {
+  display: flex;
+  padding: 0;
+}
+
+/*Sección Title*/
+
+section.title {
+  display: flex;
+  padding: 0 var(--padding-inicial);
+  background-color: blue;
+}
+.title__profile {
+  width: 300px;
+  height: 300px;
+}
+
+/*Sección About*/
+
+section.about {
+  display: flex;
+  padding: 0 var(--padding-inicial);
+  background-color: aqua;
+}
+/* Seccion Skills*/
+section.skills {
+  display: flex;
+  padding: 0 var(--padding-inicial);
+  background-color: gray;
+}
+
+/*Sección Hobbies*/
+
+section.hobbies {
+  display: flex;
+  padding: 0 var(--padding-inicial);
+  background-color: brown;
+}
+/* Experiencia Académica*/
+
+section.academic {
+  display: flex;
+  padding: 0 var(--padding-inicial);
+  background-color: yellow;
+}
+
+/* experiencia*/
+
+section.experience {
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--padding-inicial);
+  background-color: green;
+}
+.experience__box {
+  display: flex;
+  align-items: center;
+}
+.experience__img {
+  display: flex;
+  width: 50%;
+}
+.experience__info {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Contacto*/
+
+section.formcontato {
+  display: flex;
+  padding: 0 var(--padding-inicial);
+  background-color: red;
+}
+
+/*footeer*/
+
+section.footer {
+  display: flex;
+  padding: 0 var(--padding-inicial);
+  background-color: tomato;
+}
