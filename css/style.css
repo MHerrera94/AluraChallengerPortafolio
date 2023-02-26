@@ -12,6 +12,7 @@ coloque nas sessões indicadas*/
   --color-texto: #464646;
   --font-defect: "Raleway";
   --padding-inicial: 7%;
+  --azul-alura: #2a7ae4;
 }
 
 body {
@@ -282,21 +283,62 @@ section.experience {
   display: flex;
   flex-direction: column;
   padding: 0 var(--padding-inicial);
-  background-color: green;
+}
+.experience__section__title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
 }
 .experience__box {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  height: 70vh;
+}
+.experiencie__box {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 70vh;
 }
 .experience__img {
   display: flex;
-  width: 50%;
+  margin-right: 1em;
 }
 .experience__info {
   display: flex;
   flex-direction: column;
 }
-
+.experience__title {
+  margin: 0;
+}
+.experience__text {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0.5em 0;
+}
+.experience__description {
+  display: flex;
+  margin-right: 2em;
+  width: 100%;
+}
+.experience__repo {
+  background: #fff;
+  padding: 1em;
+  text-align: center;
+  margin-right: 1em;
+}
+.experience__repo > a {
+  color: var(--azul-alura);
+}
+.experience__demo {
+  background: var(--azul-alura);
+  padding: 1em;
+  text-align: center;
+}
+.experience__demo > a {
+  color: #fff;
+}
 /*Contacto*/
 
 section.formcontato {
