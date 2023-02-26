@@ -142,7 +142,35 @@ section.about {
 section.skills {
   display: flex;
   padding: 0 var(--padding-inicial);
-  background-color: gray;
+  flex-direction: column;
+  height: 40vh;
+}
+.skills__title {
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+.skills__line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 70%;
+}
+.skills__box {
+  display: flex;
+  align-items: flex-end;
+  background-color: #fff;
+  width: 15%;
+  height: 100%;
+  margin: 1rem 0;
+}
+.skills__box > ul {
+  padding: 1rem;
+  margin: 0;
+}
+.skills__name {
+  font-weight: bold;
 }
 
 /*Sección Hobbies*/
@@ -150,14 +178,43 @@ section.skills {
 section.hobbies {
   display: flex;
   padding: 0 var(--padding-inicial);
-  background-color: brown;
+  text-align: center;
+  flex-direction: column;
+  height: 40vh;
+}
+.hobbies__title {
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+.hobbies__line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 70%;
+}
+.hobbies__box {
+  display: flex;
+  align-items: flex-end;
+  background-color: #fff;
+  width: 15%;
+  height: 100%;
+  margin: 1rem 0;
+}
+.hobbies__box > ul {
+  padding: 1rem;
+  margin: 0;
+}
+.hobbies__name {
+  font-weight: bold;
 }
 /* Experiencia Académica*/
 
 section.academic {
   display: flex;
   padding: 0 var(--padding-inicial);
-  background-color: yellow;
+  background: #eaf2fd;
 }
 
 /* experiencia*/
