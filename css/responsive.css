@@ -43,8 +43,6 @@ Utiliza las referencias de los breakpoints @media abajo */
     right: 0;
   }
   /*title*/
-  section.title {
-  }
   .title__profile {
     width: 35%;
     max-height: 70%;
