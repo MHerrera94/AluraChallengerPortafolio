@@ -1,38 +1,142 @@
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
 /*Tablet*/
-@media (min-width: 768px) {
-    /* Menú */
-  
-    /*title*/
-  
-    /*Skills*/
-  
-    /*Hobbies*/
-  
-    /*Formación Académica*/
-  
-    /*Experiencia Profesional*/
+@media (max-width: 1023px) {
+  /* Menú */
+  .menu__label {
+    display: flex;
+    position: fixed;
+    top: 2.5rem;
+    right: 0;
+    line-height: 2;
+    background: #222;
+    color: #fff;
+    padding: 0 1em;
+    cursor: pointer;
+    z-index: 150;
   }
-  
-  /*Mobile*/
-  @media (min-width: 319px) {
-    /*Menu*/
-  
-    /*Titulo*/
-  
-    /*Sección sobre mi*/
-  
-    /*Skills*/
-  
-    /*Hobbies*/
-  
-    /*Formación Académica*/
-  
-    /*Experiencia Profesional*/
-  
-    /*Contacto*/
-  
-    /*Footer*/
+  .menu__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    right: -50%;
+    background: rgba(0, 0, 0, 0.9);
+    width: 50%;
+    height: 100vh;
+    padding-top: 4em;
+    z-index: 100;
+    transition: all 0.5s;
   }
-  
+  .menu__list__item a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    line-height: 2.5;
+    padding: 0 1em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .menu__checkbox:checked ~ ul {
+    right: 0;
+  }
+  /*title*/
+  section.title {
+  }
+  .title__profile {
+    width: 35%;
+    max-height: 70%;
+  }
+  .title__container {
+    margin: 0;
+  }
+  .title__bio {
+    font-size: 1.7rem;
+  }
+  /*Sección About*/
+  section.about {
+    width: initial;
+  }
+  .about__container {
+    width: 100%;
+    margin: 0;
+  }
+  .about__title {
+    font-size: 3rem;
+    margin-bottom: 0;
+    margin-top: 1rem;
+  }
+  /*Skills*/
+  section.skills {
+    height: 50vh;
+  }
+  .skills__line {
+    flex-direction: row;
+  }
+  .skills__box {
+    width: 31%;
+    height: 50%;
+    margin: 1%;
+  }
+  /*Hobbies*/
+
+  section.hobbies {
+    height: 50vh;
+  }
+  .hobbies__line {
+    flex-direction: row;
+  }
+  .hobbies__box {
+    width: 31%;
+    height: 50%;
+    margin: 1%;
+  }
+  /*Formación Académica*/
+  .academic__courses__item__title {
+    font-size: 1rem;
+  }
+
+  /*Experiencia Profesional*/
+  .experience__box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .experiencie__box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .experience__img {
+    margin-right: 0;
+    width: 100%;
+  }
+  /*Contacto*/
+  section.formcontato {
+    height: 70vh;
+  }
+  .formcontato__botao {
+    padding: 2% 3%;
+  }
+}
+
+/*Mobile*/
+@media (max-width: 767px) {
+  /*Menu*/
+
+  /*Titulo*/
+
+  /*Sección sobre mi*/
+
+  /*Skills*/
+
+  /*Hobbies*/
+
+  /*Formación Académica*/
+
+  /*Experiencia Profesional*/
+
+  /*Contacto*/
+
+  /*Footer*/
+}
