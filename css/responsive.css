@@ -120,21 +120,120 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 /*Mobile*/
 @media (max-width: 767px) {
+  body {
+    font-size: 12px;
+  }
   /*Menu*/
+  .menu__label {
+    top: 1.2rem;
+  }
 
   /*Titulo*/
-
+  .title__div {
+    flex-direction: column;
+  }
+  .title__bio {
+    font-size: 1.2rem;
+  }
+  .title__network__item {
+    margin: 0 0.5rem 0 0;
+  }
   /*Sección sobre mi*/
 
   /*Skills*/
-
+  section.skills {
+    height: 90vh;
+  }
+  .skills__title {
+    margin: 2% 0;
+  }
+  .skills__box {
+    width: 48%;
+  }
+  .skills__line {
+    height: 50%;
+  }
   /*Hobbies*/
-
+  section.hobbies {
+    height: 90vh;
+  }
+  .hobbies__title {
+    margin: 2% 0;
+  }
+  .hobbies__box {
+    width: 48%;
+  }
+  .hobbies__line {
+    height: 50%;
+  }
   /*Formación Académica*/
-
+  section.academic {
+    height: 100vh;
+    justify-content: flex-start;
+  }
+  .academic__title {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+  .academic__courses {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 80%;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .academic__courses__item__img img {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .academic__courses__list {
+    height: 40%;
+  }
+  .academic__courses__box {
+    width: 100%;
+    height: 30%;
+  }
   /*Experiencia Profesional*/
-
+  .experience__box {
+    height: initial;
+  }
+  .experiencie__box {
+    height: initial;
+  }
   /*Contacto*/
-
+  section.formcontato {
+    height: 80vh;
+  }
+  .formcontato--esquerda {
+    display: none;
+  }
+  .formcontato__img {
+    display: none;
+  }
+  .formcontato__contacto {
+    height: 100%;
+  }
+  .formcontato__text {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .formcontato__title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .formcontato__subtext {
+    margin-bottom: 0.5rem;
+  }
+  .formcontato__form {
+    height: 75%;
+  }
+  .formcontato__botao {
+    width: 50%;
+    padding: 3%;
+  }
   /*Footer*/
+  .footer__rodape {
+    margin: 2em 0;
+  }
 }

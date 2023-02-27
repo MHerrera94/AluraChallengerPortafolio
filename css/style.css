@@ -240,7 +240,6 @@ section.academic {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
   height: 80%;
   align-items: flex-start;
 }
