@@ -179,10 +179,17 @@ section.skills {
 }
 .skills__box > ul {
   padding: 1rem;
-  margin: 0;
+  margin: 0 auto;
 }
 .skills__name {
   font-weight: bold;
+}
+.skills__img {
+  max-width: 32px;
+  margin: 0 auto;
+}
+.skills__img img {
+  max-width: 32px;
 }
 
 /*Sección Hobbies*/
@@ -216,10 +223,17 @@ section.hobbies {
 }
 .hobbies__box > ul {
   padding: 1rem;
-  margin: 0;
+  margin: 0 auto;
 }
 .hobbies__name {
   font-weight: bold;
+}
+.hobbies__img {
+  width: 32px;
+  margin: 0 auto;
+}
+.hobbies__img img {
+  width: 32px;
 }
 /* Experiencia Académica*/
 
@@ -318,6 +332,7 @@ section.experience {
   display: flex;
   margin-right: 1em;
   width: 70%;
+  max-height: 70%;
 }
 .experience__info {
   display: flex;
