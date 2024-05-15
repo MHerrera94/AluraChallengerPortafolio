@@ -1,9 +1,9 @@
 <?php
 
-define('EMAIL_HOST', 'smtp.gmail.com');
-define('EMAIL_PORT', 465);
-define('EMAIL_NAME', 'gokuherr@gmail.com');
-define('EMAIL_PASS', 'stfg htpm moxe rjxj');
+define('EMAIL_HOST', 'x11.x10hosting.com');
+define('EMAIL_PORT', 587);
+define('EMAIL_NAME', 'info@angelusinfernus.x10.mx');
+define('EMAIL_PASS', 'Angelus2857');
 define('SITE_NAME', 'Portafolio Contacto');
 
 # ⚠⚠⚠ LEA CON CUIDADO ⚠⚠⚠

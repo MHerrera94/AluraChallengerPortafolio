@@ -96,7 +96,7 @@ $mensaje = '
                 >
                   <img
                     src="https://github.com/MHerrera94/AluraChallengerPortafolio/blob/master/assets/favicon.png?raw=true"
-                    alt="Prowessec"
+                    alt="angelusinfernus"
                     width="150"
                     style="height: auto; display: block"
                   />
@@ -283,5 +283,5 @@ try {
   echo $address;
   echo "Error al enviar el mensaje: {$mail->ErrorInfo}" .  $address;
 }
-header('Location: /AluraChallengerPortafolio/');
+header('Location: ../');
 exit();
